@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		 	<meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+          <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<title>Register</title>
+		
+
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		 
+         <!-- JQURY -->
+
+         <!-- //////////////////////////// -->
+		<link href='accountsMang/style.css' rel='stylesheet' type='text/css'>
+
+
+		 
+		 
+		 
+
+
+          <link rel="stylesheet" href="scss/main.css">
+         <link rel="stylesheet" href="scss/skin.css">
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+          <script src="script/index.js"></script>
+		 
+	</head>
+	    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="icons/1_kLk2H7qaThoE3afAd2Glmw.png" style="float: left; margin: -19px -250px 0px 0px;" width="280" height="70"></a>
+                    </div>
+                    <div id="navbar" class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li ><a href="home.html">Home</a></li>
+							<li ><a href="login.html">login</a></li>
+							<li class="active"><a href="Sgin in.html">sign in</a></li>
+                            
+
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </nav>
+    </header>
+	<style>
+	* {
+  	box-sizing: border-box;
+  	font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+  	font-size: 16px;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+body {
+
+  	margin: 0;
+}
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.register {
+  	width: 400px;
+  	background-color: #ffffff;
+  	box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  	margin: 100px auto;
+}
+.register h1 {
+  	text-align: center;
+  	color: #5b6574;
+  	font-size: 24px;
+  	padding: 20px 0 20px 0;
+  	border-bottom: 1px solid #dee0e4;
+}
+.register form {
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	padding-top: 20px;
+}
+.register form label {
+
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	width: 50px;
+ 	height: 50px;
+  	background-color: #3274d6;
+  	color: #ffffff;
+}
+.register form input[type="password"], .register form input[type="text"], .register form input[type="email"] {
+  	width: 310px;
+  	height: 50px;
+  	border: 1px solid #dee0e4;
+  	margin-bottom: 20px;
+  	padding: 0 15px;
+}
+.register form input[type="submit"] {
+  	width: 100%;
+  	padding: 15px;
+  	margin-top: 20px;
+  	background-color: #3274d6;
+ 	border: 0;
+  	cursor: pointer;
+  	font-weight: bold;
+  	color: #ffffff;
+  	transition: background-color 0.2s;
+}
+.register form input[type="submit"]:hover {
+	background-color: #2868c7;
+  	transition: background-color 0.2s;
+}
+
+</style>
+	<body id="wrapper" style="background-color:#293d3d">
+	
+
+	
+
+		          <div class="register">
+		         	   <h1>REGISTER</h1>
+		          	      <form action="register.php" method="post" autocomplete="off">
+			          	     <label for="username">
+			     		      <i class="fas fa-user"></i>
+			        	      </label>
+			        	      <input type="text" name="username" placeholder="Username" id="username" required>
+			        	      <label for="password">
+				            	<i class="fas fa-lock"></i>
+				              </label>
+			        	     <input type="password" name="password" placeholder="Password" id="password" required>
+				             <label for="email">
+			 	             <i class="fas fa-envelope"></i>
+			        	     </label>
+			        	     <input type="email" name="email" placeholder="Email" id="email" required>
+
+			         	     <div align="center"><br>
+			        	     <h3> Role : </h3>
+                              <input type="radio" name="Role" value="editor" checked> Editor<br>
+                             <input type="radio" name="Role" value="admin" > Administrator<br>
+                              <hr>
+                             </div>
+				
+				
+				              <input type="submit" value="Register">
+			               </form> 
+		              </div> 
+
+
+
+                           
+                        </div>
+  				
+  				</div>
+  		
+
+
+		
+		    <div id="panel">
+        <div id="panel-admin">
+            <div class="panel-admin-box">
+                <div id="tootlbar_colors">
+                    <button class="color" style="background-color:#1abac8;" onclick="mytheme(0)"></button>
+                    <button class="color" style="background-color:#ff8a00;" onclick="mytheme(1)"> </button>
+                    <button class="color" style="background-color:#b4de50;" onclick="mytheme(2)"> </button>
+                    <button class="color" style="background-color:#e54e53;" onclick="mytheme(3)"> </button>
+                    <button class="color" style="background-color:#1abc9c;" onclick="mytheme(4)"> </button>
+                    <button class="color" style="background-color:#159eee;" onclick="mytheme(5)"> </button>
+                </div>
+            </div>
+
+        </div>
+        <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
+    </div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
